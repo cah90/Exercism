@@ -7,7 +7,9 @@ export const gigasecond = (date) => {
 
 const initialDate = date.getTime();
 
-const finalDate = initialDate + 1000000000000;
+//const finalDate = initialDate + 1000000000000;
+
+const finalDate = initialDate + 1e12; //the same as the above.
 
 return new Date(finalDate);
 
