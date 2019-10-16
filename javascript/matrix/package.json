@@ -1,6 +1,5 @@
 {
   "name": "exercism-javascript",
-  "version": "2.0.0",
   "description": "Exercism exercises in Javascript.",
   "author": "Katrina Owen",
   "private": true,
@@ -32,7 +31,5 @@
     "lint-test": "eslint . && jest --no-cache ./* "
   },
   "license": "MIT",
-  "dependencies": {
-    "npm": "^6.12.0"
-  }
+  "dependencies": {}
 }
