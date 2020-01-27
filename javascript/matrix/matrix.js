@@ -4,15 +4,18 @@
 //
 
 export class Matrix {
-  constructor() {
-    throw new Error("Remove this statement and implement this function");
+  constructor(string) {
+	this._matrix = string;
   }
 
   get rows() {
-    throw new Error("Remove this statement and implement this function");
+    return this._matrix.split('\n').map(element => element.split(' ').map(element => +element));
+
+    
   }
 
   get columns() {
-    throw new Error("Remove this statement and implement this function");
+    return this.rows[0].map((element, index) => this.rows.map(element => element[index]));
+
   }
 }
