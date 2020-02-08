@@ -10,12 +10,9 @@ export class Matrix {
 
   get rows() {
     return this._matrix.split('\n').map(element => element.split(' ').map(element => +element));
-
-    
   }
 
   get columns() {
     return this.rows[0].map((element, index) => this.rows.map(element => element[index]));
-
   }
 }
